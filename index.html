@@ -6,6 +6,43 @@ html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enterprise Entertainment Solutions | Managed Digital Perks</title>
     <style>
+        /* Accuview TV Brand Theme Variables */
+  :root {
+      --bg-dark: #0B0F19;         /* Deep enterprise dark mode */
+      --card-bg: #1F2937;         /* Container backgrounds */
+      --accuview-blue: #0D6EFD;   /* Bright logo blue */
+      --accuview-yellow: #FFCC00; /* Vibrant logo yellow */
+      --text-main: #F9FAFB;       /* Off-white for readability */
+      --text-muted: #9CA3AF;      /* Soft grey for secondary text */
+  }
+
+  /* Global Body Layout Update */
+  body {
+      background-color: var(--bg-dark) !important;
+      color: var(--text-main) !important;
+  }
+
+  /* Main Action Button (Vibrant Yellow) */
+  a[href*="Access Corporate Portal Setup"] {
+      background-color: var(--accuview-yellow) !important;
+      color: #000000 !important;
+      font-weight: 700 !important;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+  }
+
+  a[href*="Access Corporate Portal Setup"]:hover {
+      background-color: #E6B800 !important;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+  }
+
+  /* Headings (Electric Blue) */
+  h1, h2, h3 {
+      color: var(--accuview-blue) !important;
+  }
         :root {
             --primary: #0A192F; /* Deep Corporate Navy */
             --accent: #00B4D8; /* Tech Cyan */
