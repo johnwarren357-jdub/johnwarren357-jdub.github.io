@@ -4,99 +4,195 @@ html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise Entertainment Solutions | Managed Digital Perks</title>
+    <title>Enterprise Network Solutions | Authorized Strategic Partner</title>
     <style>
         /* Accuview TV Brand Theme Variables */
-  :root {
-      --bg-dark: #0B0F19;         /* Deep enterprise dark mode */
-      --card-bg: #1F2937;         /* Container backgrounds */
-      --accuview-blue: #0D6EFD;   /* Bright logo blue */
-      --accuview-yellow: #FFCC00; /* Vibrant logo yellow */
-      --text-main: #F9FAFB;       /* Off-white for readability */
-      --text-muted: #9CA3AF;      /* Soft grey for secondary text */
-  }
-
-  /* Global Body Layout Update */
-  body {
-      background-color: var(--bg-dark) !important;
-      color: var(--text-main) !important;
-  }
-
-  /* Main Action Button (Vibrant Yellow) */
-  a, .btn, .hero-buttons a {
-      background-color: var(--accuview-yellow) !important;
-      color: #000000 !important;
-      font-weight: 700 !important;
-      padding: 12px 28px;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.3s ease;
-  }
-
-  a[href*="Access Corporate Portal Setup"]:hover {
-      background-color: #E6B800 !important;
-      box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
-  }
-
-  /* Headings (Electric Blue) */
-  h1, h2, h3 {
-      color: var(--accuview-blue) !important;
-  }
         :root {
-            --primary: #0A192F; /* Deep Corporate Navy */
-            --accent: #00B4D8; /* Tech Cyan */
-            --text: #333333;
-            --light-bg: #F8F9FA;
+            --bg-dark: #0B0F19;         /* Deep enterprise dark mode */
+            --card-bg: #1F2937;         /* Container backgrounds */
+            --accuview-blue: #0D6EFD;   /* Bright logo blue */
+            --accuview-yellow: #FFCC00; /* Vibrant logo yellow */
+            --text-main: #F9FAFB;       /* Off-white for readability */
+            --text-muted: #9CA3AF;      /* Soft grey for secondary text */
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text); background-color: var(--primary); margin: 0; padding: 0; }
-        .hero { padding: 100px 20px; text-align: center; color: white; background: linear-gradient(135deg, #0A192F 0%, #112240 100%); }
-        .hero h1 { font-size: 2.8rem; font-weight: 800; max-width: 900px; margin: 0 auto 20px; line-height: 1.2; }
-        .hero p { font-size: 1.25rem; color: #8892B0; max-width: 700px; margin: 0 auto 40px; }
-        .badge { background-color: rgba(0, 180, 216, 0.1); color: var(--accent); padding: 8px 16px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; display: inline-block; }
-        .cta-btn { background-color: var(--accent); color: var(--primary); font-weight: 700; padding: 18px 36px; border-radius: 4px; text-decoration: none; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3); }
-        .cta-btn:hover { background-color: #90E0EF; transform: translateY(-2px); }
-        .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; background-color: white; border-radius: 8px; margin-top: -40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
-        .card { padding: 30px; border-left: 4px solid var(--accent); background-color: var(--light-bg); border-radius: 0 8px 8px 0; }
-        .card h3 { margin-top: 0; font-size: 1.4rem; color: var(--primary); }
-        .footer { text-align: center; padding: 40px 20px; color: #8892B0; font-size: 0.9rem; }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border-top: 5px solid var(--accuview-blue);
+        }
+
+        h1 {
+            color: var(--text-main);
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: var(--accuview-blue);
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #374151;
+            background-color: #111827;
+            color: #ffffff;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--accuview-blue);
+            box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--accuview-yellow);
+            color: #000000;
+            font-weight: 700;
+            border: none;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-submit:hover {
+            background-color: #E6B800;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 11px;
+            color: var(--text-muted);
+            text-align: center;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
 
-    <section class="hero">
-        <div class="badge">Enterprise & Group Infrastructure</div>
-        <h1>Deploy a Premium, Fully-Managed Digital Entertainment Benefit Across Your Entire Network</h1>
-        <p>Enable your community, independent contractor base, or business fleet to cut legacy connectivity costs with zero capital expenditure.</p>
-        
-        <!-- DUAL-ACTION ROUTING BUTTON -->
-        <a href="https://buyaccuviewtv.com/#order" target="_blank" onclick="alert('REDIRECTING TO VERIFICATION SYSTEM:\n\n1. Your corporate tracking token has been securely generated.\n2. When the portal opens, click the ORDER button to initialize your corporate setup.\n\nClick OK to open the secure registry portal.');" class="cta-btn">Access Corporate Portal Setup ➔</a>
-    </section>
+<div class="container">
+    <h1>Enterprise Entertainment Solutions</h1>
+    <h2>Corporate Executive Portal Activation</h2>
+    
+    <p>Deploy a premium, fully-managed digital entertainment benefit across your network. Complete the verification form below to route to your base membership setup and activate your organization's sub-referral engine.</p>
 
-    <div class="container">
-        <h2 style="text-align: center; color: var(--primary); font-size: 2rem;">Engineered for High-Capacity Demands</h2>
-        <p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto;">We resolve the core issues of unmanaged, unstable budget digital networks by delivering an ironclad, enterprise-ready media streaming layer built for scale.</p>
+    <!-- Form executes tracking cookie drop and redirection on submit -->
+    <form id="leadForm" onsubmit="handleFormSubmit(event)">
         
-        <div class="grid">
-            <div class="card">
-                <h3>100% Turnkey Architecture</h3>
-                <p>No software engineering, continuous software patching, or content licensing headaches required. Your group connects instantly through a secure, cloud-hosted backbone layout.</p>
-            </div>
-            <div class="card">
-                <h3>Universal Ecosystem Sync</h3>
-                <p>Native, white-glove compatibility across all modern endpoints including Amazon FireOS, iOS, Android, and secure Web protocols without hardware modification.</p>
-            </div>
-            <div class="card">
-                <h3>24/7 Monitored Integrity</h3>
-                <p>Backed by an active network operations center ensuring persistent uptime, dedicated engineering support channels, and a corporate 7-day performance execution guarantee.</p>
-            </div>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required placeholder="e.g. John Doe">
         </div>
-    </div>
 
-    <div class="footer">
+        <div class="form-group">
+            <label for="businessEmail">Corporate Email Address</label>
+            <input type="email" id="businessEmail" required placeholder="e.g. name@company.com">
+        </div>
+
+        <div class="form-group">
+            <label for="companyName">Company / Organization Name</label>
+            <input type="text" id="companyName" required placeholder="e.g. Enterprise Solutions LLC">
+        </div>
+
+        <div class="form-group">
+            <label for="jobTitle">Executive Job Title</label>
+            <select id="jobTitle" required>
+                <option value="" disabled selected>Select your position...</option>
+                <option value="Owner / Founder">Owner / Founder</option>
+                <option value="CEO / President">CEO / President</option>
+                <option value="Managing Director / VP">Managing Director / VP</option>
+                <option value="Fleet Operations Manager">Fleet Operations Manager</option>
+                <option value="Network / Group Administrator">Network / Group Administrator</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="networkSize">Estimated Fleet / Network Size (End Users)</label>
+            <select id="networkSize" required>
+                <option value="" disabled selected>Select network size...</option>
+                <option value="1-25 users">1 - 25 users (Small Team)</option>
+                <option value="26-100 users">26 - 100 users (Mid-Market Fleet)</option>
+                <option value="101-500 users">101 - 500 users (Enterprise Scale)</option>
+                <option value="500+ users">500+ users (High-Capacity Infrastructure)</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Verify Credentials & Setup Portal ➔</button>
+    </form>
+
+    <div class="footer-text">
         © 2026 Enterprise Network Solutions. Authorized Strategic Distribution Partner for AccuviewTV Global Infrastructure.
     </div>
+</div>
+
+<script>
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        
+        // Target affiliate tracking link
+        const targetUrl = "http://www.accuviewtv.com/?afmc=842667";
+        
+        // Fires cookie drop and directly redirects the browser session
+        window.location.href = targetUrl;
+    }
+</script>
 
 </body>
 </html>
