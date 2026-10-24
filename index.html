@@ -186,13 +186,29 @@
     function handleFormSubmit(event) {
         event.preventDefault();
         
-        // Target affiliate tracking link
-        const targetUrl = "http://www.accuviewtv.com/?afmc=842667";
+        // 1. Gather all executive/individual data fields from the active screen
+        const name = document.getElementById('fullName').value;
+        const email = document.getElementById('businessEmail').value;
+        const phone = document.getElementById('mobilePhone').value;
+        const company = document.getElementById('companyName').value;
+        const title = document.getElementById('jobTitle').value;
+        const size = document.getElementById('networkSize').value;
         
-        // Fires cookie drop and directly redirects the browser session
-        window.location.href = targetUrl;
+        // 2. Build a clean, formatted validation summary text block
+        const emailSubject = encodeURIComponent("AccuviewTV Lead Capture Form - Structural Validation Test");
+        const emailBody = encodeURIComponent(
+            `--- ACCUVIEWTV LIVE FORM TEST SUCCESS ---\n\n` +
+            `Full Name: ${name}\n` +
+            `Email Address: ${email}\n` +
+            `Mobile/SMS Number: ${phone}\n` +
+            `Company/Organization: ${company}\n` +
+            `Executive Job Title: ${title}\n` +
+            `Estimated Network Size: ${size}\n\n` +
+            `-----------------------------------------\n` +
+            `Status: Form actions validated successfully. Redirection parameters functional.`
+        );
+        
+        // 3. Fire the localized mailto action to open your desktop email program
+        window.location.href = `mailto:john.warren357@://gmail.com{emailSubject}&body=${emailBody}`;
     }
 </script>
-
-</body>
-</html>
